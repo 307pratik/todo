@@ -6,15 +6,21 @@ const Form = (props) => {
   const [detail, setdetails] = useState("");
 
   const OnDataSubmitHandler = (e) => {
-    e.preventDefault();
+    if (tittle && detail) {
+      e.preventDefault();
 
-    const entry = {
-      tittle: tittle,
-      detail: detail,
-    };
-    props.getData(entry);
-    settittle("");
-    setdetails("");
+      const entry = {
+        tittle: tittle,
+        detail: detail,
+      };
+      props.getData(entry);
+      settittle("");
+      setdetails("");
+    } else {
+      e.preventDefault();
+
+      alert("Plese enter valid details");
+    }
   };
 
   const tittleChangeHandler = (e) => {
@@ -46,7 +52,7 @@ const Form = (props) => {
           ></input>
         </div>
 
-        <input type="submit" value="Submit"></input>
+        <input className="button" type="submit" value="Submit"></input>
       </form>
     </div>
   );

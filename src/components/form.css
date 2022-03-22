@@ -1,22 +1,45 @@
 .form {
   position: relative;
   margin: auto;
-  max-width: fit-content;
   text-align: center;
-  background-color: blueviolet;
+  width: 50%;
   color: white;
   padding: 50px;
+  border: 5px solid blueviolet;
 }
 h1 {
   color: white;
+  max-width: 100%;
+  position: relative;
+
+  background-color: blueviolet;
+  padding: 20px;
 }
 
 label {
   font-weight: 500;
+  color: blueviolet;
 }
 
 input {
   margin: 10px;
-  height: 20px;
-  width: 200px;
+  height: 30px;
+  width: 50%;
+  border: 2px solid blueviolet;
+}
+.button {
+  width: 50%;
+  height: 50px;
+  background-color: white;
+  border: 2px solid blueviolet;
+  border-radius: 12px;
+  color: blueviolet;
+  font-weight: 700;
+}
+
+:hover.button {
+  background-color: blueviolet;
+  color: white;
+  border: 2px solid white;
+  border-radius: 12px;
 }
