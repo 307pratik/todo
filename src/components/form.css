@@ -1,0 +1,22 @@
+.form {
+  position: relative;
+  margin: auto;
+  max-width: fit-content;
+  text-align: center;
+  background-color: blueviolet;
+  color: white;
+  padding: 50px;
+}
+h1 {
+  color: white;
+}
+
+label {
+  font-weight: 500;
+}
+
+input {
+  margin: 10px;
+  height: 20px;
+  width: 200px;
+}
